@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .nav-link{
+        @apply block font-semibold py-2 text-base 2xl:text-lg text-gray-700 hover:text-gray-400 md:border-none md:p-0;
+    }
+    .blog-div{
+        @apply animate-fade-in-down mt-4 md:my-4 border border-gray-200 shadow-md rounded-md;
+    }
+    .text-title{
+        @apply text-secondary hover:text-primary text-base 2xl:text-lg font-bold;
+    }
+    .text-sub-title{
+        @apply text-gray-600 text-sm 2xl:text-lg font-semibold;
+    }
+    .text-content{
+        @apply text-gray-600 text-sm 2xl:text-lg;
+    }
+
+    .blog-detail-title{
+        @apply text-primary hover:text-primary-light text-lg 2xl:text-xl font-bold;
+    }
+
+    .grid-items:first-child .grid-item{
+        @apply bg-green-200 w-2/3;
+    }
+}
+
+
+body {  
+    font-family: 'Roboto', sans-serif;  
+}  
+
+*
+{
+  --Primary: #59ab6e;
+  --Paleprimary: #c7e2ce;
+  --Verydarkblue: hsl(220, 13%, 13%);
+  --Darkgrayishblue: hsl(219, 9%, 45%);
+  --Grayishblue: hsl(220, 14%, 75%);
+  --Lightgrayishblue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 40s linear infinite;
+}
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.details--company
+{
+  color: var(--Primary);
+}
+
+.details--text
+{
+  color: var(--Darkgrayishblue);
+}
+
+.details--discount-value
+{
+  color: var(--Primary);
+  background-color: var(--Paleprimary);
+}
+
+.details--previous-price
+{
+  color: var(--Grayishblue);
+}
+
+.details--amount-box
+{
+  background-color: var(--Lightgrayishblue);
+}
+
+.details--addToCard-button
+{
+  background-color: var(--Primary);
+}
+
+.slider--dekstop-button:hover .slider--arrow-icon
+{
+  stroke: var(--Primary) !important;
+}
+
+.slider--arrow-icon
+{
+  stroke: #1D2026   !important
+}
